@@ -111,22 +111,20 @@ require('lazy').setup({
       },
     },
   },
-
-  { -- Theme inspired by Atom
-    'navarasu/onedark.nvim',
-    priority = 1000,
+  {
+    -- Theme
+    "shaunsingh/solarized.nvim",
     config = function()
-      vim.cmd.colorscheme 'onedark'
+      require('solarized').set()
     end,
   },
-
   { -- Set lualine as statusline
     'nvim-lualine/lualine.nvim',
     -- See `:help lualine.txt`
     opts = {
       options = {
         icons_enabled = false,
-        theme = 'onedark',
+        theme = 'solarized',
         component_separators = '|',
         section_separators = '',
       },

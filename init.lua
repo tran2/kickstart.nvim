@@ -124,7 +124,7 @@ require('lazy').setup({
     opts = {
       options = {
         icons_enabled = false,
-        theme = 'solarized',
+        theme = 'solarized_light',
         component_separators = '|',
         section_separators = '',
       },
